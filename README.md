@@ -12,6 +12,6 @@ Topics:
 6. Sessions, SMS, Email
 7. Projects - User Profile, Shopping Website
 
-<a href="http://geniuslynx.com/wp-content/uploads/2016/11/10-things-to-know-before-developing-a-website.png" target="_blank">
+<a href="http://geniuslynx.com/2016/11/infographic-10-things-to-know-before-developing-a-website/" target="_blank">
   10 things to know before developing a website.
 </a>
