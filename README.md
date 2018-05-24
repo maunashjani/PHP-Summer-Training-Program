@@ -10,4 +10,4 @@ Topics:
 5. MySQL Database - CRUD Operations
 6. SQL INnjection & Prepared Statements
 6. Sessions, SMS, Email
-7. CMS - Simple User Profile, Shopping Website
+7. Projects - User Profile, Shopping Website
