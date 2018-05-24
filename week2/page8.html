@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="demo">
+            <h1>AJAX Example</h1>
+            <button type="button" onclick="loadDoc2()">Change Content</button>
+        </div>
+
+        <script>
+            function loadDoc1() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("demo").innerHTML =
+                            this.responseText;
+                    }
+                };
+                //xhttp.open("GET", "images.txt", true);
+                xhttp.open("GET", "page9.php", true);
+                xhttp.send();
+            }
+
+
+            function loadDoc2() {
+                $.ajax({
+                    method: "GET",
+                    //url: "images.txt",
+                    url: "page9.php",
+                    data: null,
+                    })
+                    .done(function (msg) {
+                        $("#demo").html(msg);
+                    });
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>

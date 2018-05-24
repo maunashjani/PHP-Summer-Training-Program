@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form action="thankyou.php" method="POST">
+            Name: <input class="form-control" type="text" name="txtName" id="txtName">
+            <br>
+            <br>
+            Email: <input class="form-control" type="text" name="txtEmail" id="txtEmail">
+            <br>
+            <br>
+            Phone: <input class="form-control" type="text" name="txtPhone" id="txtPhone">
+            <br>
+            <br>
+            Message: 
+            <textarea class="form-control"></textarea>
+            <br>
+            <br>
+            Gender:
+            <input type="radio" name="Gender" id="rbMale">Male
+            <input type="radio" name="Gender" id="rbFemale">Female
+            <br>
+            <br>
+            Contact For:
+            <input type="checkbox" name="cbSupport" id="cbSupport">Support
+            <input type="checkbox" name="cbSales" id="cbSales">Sales
+            <br>
+            <br>
+            <input class="btn btn-primary" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
